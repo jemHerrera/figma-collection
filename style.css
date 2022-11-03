@@ -1,0 +1,82 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+}
+
+body{
+    background-color: #0C0B13;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container{
+    max-width: 800px;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+header h1{
+    color: white;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+header h1 span{
+    font-size: 4rem;
+}
+
+header p{
+    margin-top: 1em;
+    color: #b7b5c4;
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+main ul li{
+    list-style-type: none;
+}
+main ul li::before {
+    content: "\2022";  
+    color: #b7b5c4; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    /* margin-left: -1em; */
+}
+main ul li:hover::before{
+    color: #00ffee;
+}
+main ul li a{
+    color: white;
+}
+main ul li a:hover{
+    color: #00ffee;
+}
+
+.red{
+    color: #f50e43;
+}
+
+.teal{
+    color: #00ffee;
+}
+
+@media screen and (max-width: 600px){
+    header h1{
+        font-size: 3rem;
+    }
+    header h1 span{
+        font-size: 3rem;
+    }
+}
